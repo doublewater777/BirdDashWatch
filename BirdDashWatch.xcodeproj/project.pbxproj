@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0529467C11D8C94D45DB18B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7194DACC7282E8FA3979AA05 /* Assets.xcassets */; };
+		1C5B6260FF993BFACEA1F266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7E5261A496F89B46A75BCA /* Assets.xcassets */; };
+		39C74D480DB129FA12FE9403 /* BirdDashWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABCF773D94A3E92DB498C8 /* BirdDashWatchApp.swift */; };
+		3ACA2E85CE20D898C4078353 /* BirdDashWatchIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57514EF350D3C4E38559F09 /* BirdDashWatchIOSApp.swift */; };
+		3B1787F97D3F43801C5FBC66 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE71B56952E1C5C8E4735A /* Bird.swift */; };
+		5F5DFC06F23736A86C81B78D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9CD0C1144846F9F2C3E16 /* ContentView.swift */; };
+		6474CF5C3F74FA656BD2DD25 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6EC4B91218C2A96353E307 /* GameOverView.swift */; };
+		84F8F02989D804F51AE9E11B /* ScoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11800B6B7A7BEFB8834D3286 /* ScoreStore.swift */; };
+		8F39DA90E0E83F0F0ECBD6E2 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E832D9B0E9BA54BE15DA06 /* Obstacle.swift */; };
+		9AA8D379CCDF028EEFC4158A /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAADDF4513B82C1E220B200 /* GameEngine.swift */; };
+		9FF6D06872033A6F403A21C1 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EAFEF9339CA443D8D9C3B8 /* AudioManager.swift */; };
+		AA1770E3C6D04A7C2C80EFCE /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC0C7C1FF20B7BBECA36F0 /* GameState.swift */; };
+		BF1F158E5A8CB6D511337C8D /* BirdDashWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1C56DCA284B6441985E58DE8 /* BirdDashWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D5556F917B6534958C300C07 /* Collision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF85C5C9B87DC522900824 /* Collision.swift */; };
+		DDA8D882D39FF7D6FA993325 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FF84280A0D389FF966BBB1 /* GameView.swift */; };
+		F49DFB159CE6215771A4F033 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759973DC947A8CB3A7B3B90C /* StartView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		088AE292218445128E960041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE7349B1904F43A045DD55B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D028A1BFA82FA80EA5472EEB;
+			remoteInfo = "BirdDashWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0D3843A752D10ACA5410A19 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BF1F158E5A8CB6D511337C8D /* BirdDashWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11800B6B7A7BEFB8834D3286 /* ScoreStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreStore.swift; sourceTree = "<group>"; };
+		19EAFEF9339CA443D8D9C3B8 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		1C56DCA284B6441985E58DE8 /* BirdDashWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BirdDashWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20ABCF773D94A3E92DB498C8 /* BirdDashWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDashWatchApp.swift; sourceTree = "<group>"; };
+		56EF85C5C9B87DC522900824 /* Collision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collision.swift; sourceTree = "<group>"; };
+		57C4AF48F0EEF36C3CA790A5 /* BirdDashWatch iOS App.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "BirdDashWatch iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EAADDF4513B82C1E220B200 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		7194DACC7282E8FA3979AA05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		759973DC947A8CB3A7B3B90C /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		B0E832D9B0E9BA54BE15DA06 /* Obstacle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		B57514EF350D3C4E38559F09 /* BirdDashWatchIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDashWatchIOSApp.swift; sourceTree = "<group>"; };
+		BBFE71B56952E1C5C8E4735A /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		DB6EC4B91218C2A96353E307 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		DEC9CD0C1144846F9F2C3E16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E6FF84280A0D389FF966BBB1 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		F5BC0C7C1FF20B7BBECA36F0 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		FB7E5261A496F89B46A75BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0DAB58AE1D2A7B07D5B52357 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				56EF85C5C9B87DC522900824 /* Collision.swift */,
+				5EAADDF4513B82C1E220B200 /* GameEngine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		244F42F59747AA8A3B44C3AD /* BirdDashWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				FB7E5261A496F89B46A75BCA /* Assets.xcassets */,
+				20ABCF773D94A3E92DB498C8 /* BirdDashWatchApp.swift */,
+				DEC9CD0C1144846F9F2C3E16 /* ContentView.swift */,
+				0DAB58AE1D2A7B07D5B52357 /* Engine */,
+				CD5CBE0B6D141C4AA95FF993 /* Models */,
+				2D57A57DE4C9868171D0D2FC /* Services */,
+				5EE49236F4EB9C7889366DF9 /* Views */,
+			);
+			path = "BirdDashWatch Watch App";
+			sourceTree = "<group>";
+		};
+		2D57A57DE4C9868171D0D2FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				19EAFEF9339CA443D8D9C3B8 /* AudioManager.swift */,
+				11800B6B7A7BEFB8834D3286 /* ScoreStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5EE49236F4EB9C7889366DF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB6EC4B91218C2A96353E307 /* GameOverView.swift */,
+				E6FF84280A0D389FF966BBB1 /* GameView.swift */,
+				759973DC947A8CB3A7B3B90C /* StartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95109C0919F75D48E943B113 /* BirdDashWatch iOS App */ = {
+			isa = PBXGroup;
+			children = (
+				7194DACC7282E8FA3979AA05 /* Assets.xcassets */,
+				B57514EF350D3C4E38559F09 /* BirdDashWatchIOSApp.swift */,
+			);
+			path = "BirdDashWatch iOS App";
+			sourceTree = "<group>";
+		};
+		C3F4113A8C3E0C16015F950B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57C4AF48F0EEF36C3CA790A5 /* BirdDashWatch iOS App.app */,
+				1C56DCA284B6441985E58DE8 /* BirdDashWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD5CBE0B6D141C4AA95FF993 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBFE71B56952E1C5C8E4735A /* Bird.swift */,
+				F5BC0C7C1FF20B7BBECA36F0 /* GameState.swift */,
+				B0E832D9B0E9BA54BE15DA06 /* Obstacle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8725328C15EF17B0BE7357C = {
+			isa = PBXGroup;
+			children = (
+				95109C0919F75D48E943B113 /* BirdDashWatch iOS App */,
+				244F42F59747AA8A3B44C3AD /* BirdDashWatch Watch App */,
+				C3F4113A8C3E0C16015F950B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		005D3FB8492A0B1EDB0471F8 /* BirdDashWatch iOS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA8DF1C2598F883D1F975F6 /* Build configuration list for PBXNativeTarget "BirdDashWatch iOS App" */;
+			buildPhases = (
+				BAD04C3AA2A5985CFF598CF8 /* Sources */,
+				35FF2037781E726C77E66469 /* Resources */,
+				A0D3843A752D10ACA5410A19 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCEEC99FCD449F45DD8C35B3 /* PBXTargetDependency */,
+			);
+			name = "BirdDashWatch iOS App";
+			packageProductDependencies = (
+			);
+			productName = "BirdDashWatch iOS App";
+			productReference = 57C4AF48F0EEF36C3CA790A5 /* BirdDashWatch iOS App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D028A1BFA82FA80EA5472EEB /* BirdDashWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 770F14EB846B2B98CB75481A /* Build configuration list for PBXNativeTarget "BirdDashWatch Watch App" */;
+			buildPhases = (
+				EA70CDC734A5EB2D5C1100E3 /* Sources */,
+				339F939B6797E95AFE645518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BirdDashWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "BirdDashWatch Watch App";
+			productReference = 1C56DCA284B6441985E58DE8 /* BirdDashWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDE7349B1904F43A045DD55B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					005D3FB8492A0B1EDB0471F8 = {
+						DevelopmentTeam = 29C8MS76CZ;
+					};
+					D028A1BFA82FA80EA5472EEB = {
+						DevelopmentTeam = 29C8MS76CZ;
+					};
+				};
+			};
+			buildConfigurationList = 9E839AF9F11DD9EC4927913A /* Build configuration list for PBXProject "BirdDashWatch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D8725328C15EF17B0BE7357C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C3F4113A8C3E0C16015F950B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D028A1BFA82FA80EA5472EEB /* BirdDashWatch Watch App */,
+				005D3FB8492A0B1EDB0471F8 /* BirdDashWatch iOS App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		339F939B6797E95AFE645518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5B6260FF993BFACEA1F266 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FF2037781E726C77E66469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0529467C11D8C94D45DB18B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAD04C3AA2A5985CFF598CF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACA2E85CE20D898C4078353 /* BirdDashWatchIOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA70CDC734A5EB2D5C1100E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF6D06872033A6F403A21C1 /* AudioManager.swift in Sources */,
+				3B1787F97D3F43801C5FBC66 /* Bird.swift in Sources */,
+				39C74D480DB129FA12FE9403 /* BirdDashWatchApp.swift in Sources */,
+				D5556F917B6534958C300C07 /* Collision.swift in Sources */,
+				5F5DFC06F23736A86C81B78D /* ContentView.swift in Sources */,
+				9AA8D379CCDF028EEFC4158A /* GameEngine.swift in Sources */,
+				6474CF5C3F74FA656BD2DD25 /* GameOverView.swift in Sources */,
+				AA1770E3C6D04A7C2C80EFCE /* GameState.swift in Sources */,
+				DDA8D882D39FF7D6FA993325 /* GameView.swift in Sources */,
+				8F39DA90E0E83F0F0ECBD6E2 /* Obstacle.swift in Sources */,
+				84F8F02989D804F51AE9E11B /* ScoreStore.swift in Sources */,
+				F49DFB159CE6215771A4F033 /* StartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCEEC99FCD449F45DD8C35B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D028A1BFA82FA80EA5472EEB /* BirdDashWatch Watch App */;
+			targetProxy = 088AE292218445128E960041 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03C7B47EDDA40207F6BD49CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bird Dash Watch";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.water.BirdDashWatch;
+				PRODUCT_NAME = BirdDashWatchHost;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0D2950E7968D008B91A95BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.water.BirdDashWatch;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.water.BirdDashWatch.watchkitapp;
+				PRODUCT_NAME = BirdDashWatch;
+				PROVISIONING_PROFILE_SPECIFIER = "Bird Dash Watch App Store";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		13938BA245AE7DABA8206F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 29C8MS76CZ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4DC1DF21BC4F150E2D213117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 29C8MS76CZ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6B68DDAAEEA295019A636F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.water.BirdDashWatch;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.water.BirdDashWatch.watchkitapp;
+				PRODUCT_NAME = BirdDashWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		A6AB1F1810703324F2614B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bird Dash Watch";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.water.BirdDashWatch;
+				PRODUCT_NAME = BirdDashWatchHost;
+				PROVISIONING_PROFILE_SPECIFIER = "Bird Dash Watch iOS Host App Store";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		770F14EB846B2B98CB75481A /* Build configuration list for PBXNativeTarget "BirdDashWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B68DDAAEEA295019A636F5F /* Debug */,
+				0D2950E7968D008B91A95BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9E839AF9F11DD9EC4927913A /* Build configuration list for PBXProject "BirdDashWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC1DF21BC4F150E2D213117 /* Debug */,
+				13938BA245AE7DABA8206F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FDA8DF1C2598F883D1F975F6 /* Build configuration list for PBXNativeTarget "BirdDashWatch iOS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C7B47EDDA40207F6BD49CC /* Debug */,
+				A6AB1F1810703324F2614B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDE7349B1904F43A045DD55B /* Project object */;
+}

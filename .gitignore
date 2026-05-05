@@ -1,0 +1,7 @@
+.DS_Store
+.gstack/
+.asc/
+DerivedData/
+*.xcarchive/
+metadata/
+AppIcon-unassigned-backup/

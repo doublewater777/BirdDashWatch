@@ -1,0 +1,81 @@
+name: BirdDashWatch
+options:
+  bundleIdPrefix: com.water
+settings:
+  base:
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: 29C8MS76CZ
+targets:
+  BirdDashWatch iOS App:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: BirdDashWatch iOS App
+    dependencies:
+      - target: BirdDashWatch Watch App
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.water.BirdDashWatch
+        PRODUCT_NAME: BirdDashWatchHost
+        TARGETED_DEVICE_FAMILY: 1
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Bird Dash Watch
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+      configs:
+        Release:
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: Bird Dash Watch iOS Host App Store
+  BirdDashWatch Watch App:
+    type: application
+    platform: watchOS
+    deploymentTarget: "10.0"
+    sources:
+      - path: BirdDashWatch Watch App
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.water.BirdDashWatch.watchkitapp
+        PRODUCT_NAME: BirdDashWatch
+        SKIP_INSTALL: YES
+        TARGETED_DEVICE_FAMILY: 4
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_WKApplication: YES
+        INFOPLIST_KEY_WKCompanionAppBundleIdentifier: com.water.BirdDashWatch
+        INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp: NO
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+      configs:
+        Release:
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: Bird Dash Watch App Store
+schemes:
+  BirdDashWatch iOS App:
+    build:
+      targets:
+        BirdDashWatch iOS App:
+          - build
+          - run
+          - profile
+          - archive
+          - analyze
+        BirdDashWatch Watch App: build
+    run:
+      config: Debug
+      executable: BirdDashWatch iOS App
+    profile:
+      config: Release
+      executable: BirdDashWatch iOS App
+    archive:
+      config: Release
+  BirdDashWatch Watch App:
+    build:
+      targets:
+        BirdDashWatch Watch App: all
