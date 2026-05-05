@@ -28,6 +28,11 @@ struct ContentView: View {
         }
         .onAppear {
             engine.configure(size: screenSize)
+
+            let environment = ProcessInfo.processInfo.environment
+            if let scenario = environment["BIRDDASH_SCREENSHOT_SCENARIO"], !scenario.isEmpty {
+                engine.configureScreenshotScenario(scenario, size: screenSize)
+            }
         }
     }
 }

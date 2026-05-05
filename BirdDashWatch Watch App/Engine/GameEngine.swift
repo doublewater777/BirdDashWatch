@@ -11,6 +11,7 @@ final class GameEngine: ObservableObject {
     @Published private(set) var isNewBest = false
     @Published private(set) var scorePulse = 0
     @Published private(set) var crashFlashOpacity: Double = 0
+    @Published private(set) var isPreviewingScreenshot = false
 
     private let scoreStore: ScoreStore
     private let audioManager: AudioManager
@@ -43,13 +44,13 @@ final class GameEngine: ObservableObject {
 
         playfieldSize = size
 
-        if gameState != .playing {
+        if gameState != .playing, !isPreviewingScreenshot {
             bird = Bird.makeDefault(in: size)
         }
     }
 
     func flap() {
-        guard playfieldSize != .zero else { return }
+        guard playfieldSize != .zero, !isPreviewingScreenshot else { return }
 
         if gameState != .playing {
             startGame()
@@ -60,7 +61,7 @@ final class GameEngine: ObservableObject {
     }
 
     func step() {
-        guard gameState == .playing, playfieldSize != .zero else { return }
+        guard gameState == .playing, playfieldSize != .zero, !isPreviewingScreenshot else { return }
 
         let now = Date()
         let deltaTime = min(max(now.timeIntervalSince(lastTick), 0.008), 0.05)
@@ -71,6 +72,74 @@ final class GameEngine: ObservableObject {
         spawnObstacleIfNeeded()
         updateScoreIfNeeded()
         checkCollisions()
+    }
+
+    func configureScreenshotScenario(_ name: String, size: CGSize) {
+        guard size.width > 0, size.height > 0 else { return }
+
+        playfieldSize = size
+        isPreviewingScreenshot = true
+        bestScore = max(bestScore, 33)
+        scorePulse = 0
+        crashFlashOpacity = 0
+        isNewBest = false
+
+        switch name.lowercased() {
+        case "start":
+            gameState = .idle
+            score = 0
+            bird = Bird.makeDefault(in: size)
+            obstacles = []
+
+        case "gameplay":
+            gameState = .playing
+            score = 6
+            bird = Bird(
+                x: size.width * 0.34,
+                y: size.height * 0.45,
+                velocity: -36,
+                size: CGSize(width: 18, height: 18)
+            )
+            obstacles = [
+                Obstacle(
+                    x: size.width * 0.60,
+                    gapCenterY: size.height * 0.43,
+                    gapHeight: 92,
+                    width: obstacleWidth,
+                    hasScored: false
+                ),
+                Obstacle(
+                    x: size.width * 0.96,
+                    gapCenterY: size.height * 0.58,
+                    gapHeight: 84,
+                    width: obstacleWidth,
+                    hasScored: false
+                )
+            ]
+
+        case "gameover":
+            gameState = .gameOver
+            score = 12
+            bird = Bird(
+                x: size.width * 0.34,
+                y: size.height * 0.62,
+                velocity: 120,
+                size: CGSize(width: 18, height: 18)
+            )
+            obstacles = [
+                Obstacle(
+                    x: size.width * 0.76,
+                    gapCenterY: size.height * 0.44,
+                    gapHeight: 88,
+                    width: obstacleWidth,
+                    hasScored: true
+                )
+            ]
+
+        default:
+            isPreviewingScreenshot = false
+            configure(size: size)
+        }
     }
 
     private func startGame() {
