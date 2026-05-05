@@ -13,17 +13,17 @@ struct BirdDashWatchIOSApp: App {
                         .foregroundStyle(.tint)
 
                     VStack(spacing: 6) {
-                        Text("Bird Dash Watch")
+                        Text("ios_title")
                             .font(.title2.weight(.bold))
                             .multilineTextAlignment(.center)
 
-                        Text("Install and launch the game on Apple Watch.")
+                        Text("ios_install_message")
                             .font(.body)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.center)
                     }
 
-                    Text("This iPhone app exists to package the Watch app for App Store upload and installation.")
+                    Text("ios_packaging_message")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)

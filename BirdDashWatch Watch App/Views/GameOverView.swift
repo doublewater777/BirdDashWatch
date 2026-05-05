@@ -14,17 +14,17 @@ struct GameOverView: View {
                 .foregroundStyle(.white)
                 .monospacedDigit()
 
-            Text("Best \(bestScore)")
+            Text(String(format: NSLocalizedString("best_score_format", comment: ""), bestScore))
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(.white.opacity(0.78))
 
             if isNewBest {
-                Text("New Best!")
+                Text("new_best")
                     .font(.caption2.weight(.bold))
                     .foregroundStyle(.yellow)
             }
 
-            Text("Retry")
+            Text("retry")
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(.white)
                 .padding(.horizontal, 14)

@@ -9,18 +9,18 @@ struct StartView: View {
             floatingBird
 
             VStack(spacing: 4) {
-                Text("Bird Dash")
+                Text("game_title")
                     .font(.headline.weight(.bold))
                     .foregroundStyle(.white)
                     .lineLimit(1)
                     .minimumScaleFactor(0.75)
 
-                Text("Best \(bestScore)")
+                Text(String(format: NSLocalizedString("best_score_format", comment: ""), bestScore))
                     .font(.caption.weight(.semibold))
                     .foregroundStyle(.white.opacity(0.82))
             }
 
-            Text("Start")
+            Text("start")
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(.white)
                 .padding(.vertical, 7)
