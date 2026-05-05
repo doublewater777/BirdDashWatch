@@ -5,3 +5,6 @@ DerivedData/
 *.xcarchive/
 metadata/
 AppIcon-unassigned-backup/
+.build-shots/
+screenshots/
+startup-watch.png
