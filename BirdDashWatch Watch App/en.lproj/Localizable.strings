@@ -1,5 +1,15 @@
 "game_title" = "Bird Dash";
 "best_score_format" = "Best %d";
+"today_best_format" = "Today %d";
 "start" = "Start";
+"daily_challenge" = "Daily";
 "new_best" = "New Best!";
 "retry" = "Retry";
+"home" = "Home";
+"game_over_title" = "Try Again";
+"daily_complete_title" = "Daily Complete";
+"daily_try_again" = "Jump back in or return home to switch modes.";
+"daily_complete_subtitle" = "Nice run. Retry to beat your daily score.";
+"daily_mode_hint" = "Same route, 60s";
+"daily_duration_hint" = "60s";
+"normal_mode_hint" = "Endless high score";

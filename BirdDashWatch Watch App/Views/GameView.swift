@@ -62,6 +62,18 @@ struct GameView: View {
             )
             .ignoresSafeArea()
 
+            Circle()
+                .fill(Color.white.opacity(0.12))
+                .frame(width: size.width * 0.74)
+                .blur(radius: 6)
+                .offset(x: size.width * 0.18, y: -size.height * 0.28)
+
+            RoundedRectangle(cornerRadius: 24, style: .continuous)
+                .fill(Color.white.opacity(0.06))
+                .frame(width: size.width * 0.56, height: size.height * 0.12)
+                .rotationEffect(.degrees(-12))
+                .offset(x: -size.width * 0.16, y: -size.height * 0.18)
+
             VStack(spacing: 0) {
                 Spacer()
 
@@ -104,14 +116,29 @@ struct GameView: View {
     }
 
     private var scoreBanner: some View {
-        Text("\(engine.score)")
-            .font(.title3.monospacedDigit().weight(.bold))
-            .foregroundStyle(.white)
-            .padding(.horizontal, 10)
-            .padding(.vertical, 4)
-            .background(.black.opacity(0.18), in: Capsule())
-            .scaleEffect(pulseScale)
-            .padding(.top, 8)
+        VStack {
+            Text("\(engine.score)")
+                .font(.title3.monospacedDigit().weight(.bold))
+                .foregroundStyle(.white)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 4)
+                .background(
+                    LinearGradient(
+                        colors: [Color.black.opacity(0.24), Color.white.opacity(0.10)],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    in: Capsule()
+                )
+                .overlay {
+                    Capsule()
+                        .stroke(.white.opacity(0.10), lineWidth: 0.8)
+                }
+                .scaleEffect(pulseScale)
+
+            Spacer()
+        }
+        .padding(.top, 24)
     }
 
     private var scoreFlash: some View {

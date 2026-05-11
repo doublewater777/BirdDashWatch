@@ -5,3 +5,8 @@ enum GameState {
     case playing
     case gameOver
 }
+
+enum GameEndReason {
+    case crash
+    case sessionComplete
+}

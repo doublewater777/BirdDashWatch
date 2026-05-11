@@ -1,5 +1,15 @@
 "game_title" = "Bird Dash";
 "best_score_format" = "最高分 %d";
+"today_best_format" = "今日 %d";
 "start" = "开始";
+"daily_challenge" = "每日";
 "new_best" = "新纪录！";
 "retry" = "重试";
+"home" = "首页";
+"game_over_title" = "失误了";
+"daily_complete_title" = "每日完成";
+"daily_try_again" = "继续冲一把，还是回首页换模式";
+"daily_complete_subtitle" = "本轮结束，可以重试刷新成绩";
+"daily_mode_hint" = "固定路线 60s";
+"daily_duration_hint" = "60s";
+"normal_mode_hint" = "无时限冲分";

@@ -9,3 +9,4 @@ AppIcon-unassigned-backup/
 screenshots/
 startup-watch.png
 BirdDashWatch.xcodeproj/project.xcworkspace/xcuserdata/
+.build/

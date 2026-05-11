@@ -6,35 +6,41 @@ Bird Dash Watch
 
 ## Subtitle
 
-One-tap arcade flight
+Tap + Crown wrist dodge
 
 ## Promotional Text
 
-Tap to fly, dodge pipes, and beat your best score right on Apple Watch.
+Original Apple Watch arcade runs with tap + Crown control, haptics, and a 60-second daily challenge.
 
 ## Short Description
 
-Bird Dash Watch is a tiny one-tap arcade game made for quick wrist sessions. Tap to rise, dodge obstacles, and chase your best score.
+An original Apple Watch arcade game built around tap input, Digital Crown correction, wrist haptics, and a 60-second daily challenge.
 
 ## Full Description
 
-Bird Dash Watch is a simple arcade challenge built for Apple Watch.
+Bird Dash Watch is an original Apple Watch arcade game designed from the ground up for wrist-first play.
 
-Tap to lift your bird, glide through gaps, and see how far you can go before you crash.
+**How to play:**
+- Tap to lift your bird upward
+- Use the Digital Crown to fine-tune your height mid-flight
+- Dodge obstacles with tap plus Digital Crown correction
+- Feel haptics on near-misses, passes, and crashes
+- 60-second daily challenge with a fresh seed each day
 
-Designed for short sessions and instant restarts, it is easy to learn and fun to replay whenever you have a spare minute.
+**Features:**
 
-Features:
+- Wrist-first arcade sessions built for Apple Watch
+- Dual input: tap + Digital Crown fine adjustment
+- Haptic feedback: proximity, pass, and crash
+- Daily Challenge: same seed for everyone, compete locally
+- Local best scores — no account, no tracking, no internet needed
+- Quick retry loop for busy wrists
 
-- One-tap gameplay
-- Fast retry loop
-- Best score tracking
-- Bright watch-friendly visuals
-- Quick sessions made for Apple Watch
+This is not a generic runner clone or template reskin. It is made specifically for Apple Watch quick sessions with Watch-native haptics, Crown control, and daily seeded runs.
 
 ## Keywords
 
-watch game, arcade, flappy, bird, casual, one tap, reflex
+apple watch game, digital crown, haptic game, watch arcade, daily challenge, reflex game, wrist game
 
 ## Privacy
 
@@ -50,22 +56,17 @@ watch game, arcade, flappy, bird, casual, one tap, reflex
 - No gambling
 - No mature themes
 
-## Release Notes 1.0
+## Release Notes 1.1
 
-Initial release of Bird Dash Watch.
+- Added Daily Challenge mode with rhythm-based obstacle generation
+- Added Digital Crown fine height adjustment
+- Added haptic feedback for proximity, pass, and crash
+- Apple Watch native experience redesign
 
 ## Screenshot Copy Ideas
 
-1. `One tap to fly`
-2. `Quick arcade sessions`
-3. `Beat your best score`
-
-## App Store Connect Checklist
-
-- Set pricing to the lowest paid tier
-- Upload watch app icon
-- Upload at least 3 Apple Watch screenshots
-- Set privacy to no data collected
-- Add copyright holder name
-- Add support URL
-- Add marketing URL if available
+1. `Tap + Crown on your wrist`
+2. `60-second daily challenge`
+3. `Feel every near-miss with haptics`
+4. `Built for Apple Watch play`
+5. `No account, no tracking, just play`
